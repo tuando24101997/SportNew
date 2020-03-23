@@ -1,0 +1,115 @@
+
+/* --------------------------------------------------- */
+.wrapper {display: flex;} 
+
+.wrapper .sidebar { width: 270px !important; padding: 0px; background-color: #4e73df; height: 100vh; margin-top: 0; margin-bottom: 0; color: white }
+.wrapper .sidebar hr {margin: 0 1rem 0 1rem; border-top: 1px solid rgba(255, 255, 255, 0.1);}
+.wrapper .sidebar li { list-style-type: none;}
+.wrapper .sidebar .indam {font-weight: bold;}
+
+.wrapper .sidebar .sidebar-title {height: 70px; line-height: 70px; text-align: center;}
+.wrapper .sidebar .sidebar-title a {text-decoration: none; font-weight: bold; color: white; font-size: 17px;}
+.wrapper .sidebar .sidebar-title i {margin-right: 10px; font-size: 25px; color: white;}
+
+.wrapper .sidebar .li-dashboard {margin-left: 20px;height: 55px; line-height: 55px;}
+.wrapper .sidebar .li-dashboard i {margin-right: 10px;}
+.wrapper .sidebar .li-dashboard a {color: white; text-decoration: none; font-size: 14px;}
+.wrapper .sidebar .icons1, .wrapper .sidebar .icons2 {color: #7b9dff87}
+.wrapper .sidebar .li-dashboard a:hover .icons1 {color: white;}
+
+.wrapper .sidebar .li-post {margin-top: 15px; margin-bottom: 22px;}
+.wrapper .sidebar .li-post .post:hover .icons2 {color: white}
+.wrapper .sidebar .li-post>p {margin-left: 20px; margin-bottom: 15px; font-size: 14px; cursor: pointer;}
+.wrapper .sidebar .li-post a {color: white; display: block; text-decoration: none; font-size: 14px;}
+.wrapper .sidebar .li-post i {margin-right: 10px;}
+.wrapper .sidebar .li-post .list-post {border-radius: 10px; margin: 3rem 1rem; background-color: white; padding: 7px 0; 
+opacity: 0; visibility: hidden;  transition: .5s}
+.muiten {float: right; margin-right: 14px !important; line-height: 21px !important; transition: .3s}
+.wrapper .sidebar .li-post .list-post a{ color: #4e73df; height: 35px; line-height: 35px; margin-left: 7px; padding-left: 23px; 
+	margin-right: 7px;}
+.wrapper .sidebar .li-post .list-post a:hover{background-color: #ece8ff; border-radius: 10px;}
+
+
+.wrapper .sidebar .li-account {margin-top: 15px; margin-bottom: 22px;}
+.wrapper .sidebar .li-account>a {margin-left: 20px; margin-bottom: 15px;}
+.wrapper .sidebar .li-account a {color: white; display: block; text-decoration: none; font-size: 14px;}
+.wrapper .sidebar .li-account i {margin-right: 10px;}
+.wrapper .sidebar .li-account .list-account {border-radius: 10px; margin: 1rem; background-color: white; padding: 7px 0;}
+.wrapper .sidebar .li-account .list-account a{color: black; height: 35px; line-height: 35px; margin-left: 7px; padding-left: 23px; 
+	margin-right: 7px;}
+.wrapper .sidebar .li-account .list-account a:hover{background-color: #ece8ff; border-radius: 10px;}
+/* END CSS SIDEBAR*/ 
+
+/* ----------------------------------------------------- */
+.wrapper .content-wrapper {width: 100%; overflow-x: hidden;}
+.wrapper .content-wrapper .content-title {height: 70px; width: 100%}
+.wrapper .content-wrapper .content-title .content-title-small {height: 70px; position: relative; line-height: 70px; float: right; 
+cursor: pointer; margin-right: 20px;}
+.wrapper .content-wrapper .content-title .content-title-small img {width: 36px; height: 36px; border-radius: 18px; margin-right: 25px;}
+.wrapper .content-wrapper .content-title .content-title-small span { font-weight: 600; font-size: 14px; color: #777; margin-right: 5px;}
+.wrapper .content-wrapper .content-title .content-title-small .setting-user {position: absolute; padding: 10px 0px; border: solid 1px #fff;
+margin-top: 20px; border-radius: 6px; opacity: 0; visibility: hidden; transition: .4s}
+.wrapper .content-wrapper .content-title .content-title-small .setting-user a {display: block; line-height: 30px; font-size: 14px; 
+color: #555; padding: 0 35px; width: 150px; text-decoration:  none}
+.wrapper .content-wrapper .content-title .content-title-small .setting-user a:hover{ background-color: #f4f4f4 }
+.wrapper .content-wrapper .content-title .content-title-small .setting-user a i{ margin-right: 10px; color: #ccc}
+.wrapper .content-wrapper .content-title .gachdung {float: right; line-height: 65px; font-size: 45px; margin: 0 15px; 
+font-weight: 3; color: #ccc}
+
+.wrapper .content-wrapper .content-title .notification {float: right; line-height: 70px; font-size: 22px;color: #ccc; margin-right: 15px; 
+position: relative; }
+.wrapper .content-wrapper .content-title .notification .bell {color: #ccc; text-decoration: none;}
+.wrapper .content-wrapper .content-title .notification .bell span {position: absolute; right: -5px; margin-top: -10px; font-size: 10px; 
+color: white; font-weight: bold;}
+.wrapper .content-wrapper .content-title .notification .bell span .hinhtron {display: inline; padding: 0 3px; background-color: #fd3636;
+border-radius: 3px;}
+.wrapper .content-wrapper .content-title .notification .notification-list {position: absolute; width: 320px; left: -260px; 
+line-height: 25px; margin-top: 4px; font-size: 14px; color: black}
+.wrapper .content-wrapper .content-title .notification .notification-list .list-noidung { margin: 0; padding: 0 }
+.wrapper .content-wrapper .content-title .notification .notification-list .tieude {background-color: #4e73df; border-top-left-radius: 12px; 
+border-top-right-radius: 12px; margin: 0; height: 36px; line-height: 36px; font-weight: 600; padding-left: 10px; color: white}
+.wrapper .content-wrapper .content-title .notification .notification-list .list-noidung .noidung {list-style-type: none; margin-top: auto; margin-bottom: auto;
+padding: 15px 8px; border-top: solid 1px #f4f4f4; }
+.wrapper .content-wrapper .content-title .notification .notification-list .list-noidung a {text-decoration: none; color: black}
+.wrapper .content-wrapper .content-title .notification .notification-list .list-noidung .noidung:hover{background-color: #f4f4f4 }
+/* END CSS USER*/
+
+/* START CSS MAIN-CONTENT*/
+.main-content {font-size: 14px; margin: 2rem}
+.main-content h3 {font-weight: bold; color: #333}
+.main-content small {color: red; display: none;}
+.main-content input {font-size: 14px;}
+.main-content label {font-weight: 600;}
+.main-content .form-group {margin-bottom: 35px;}
+.main-content textarea {height: 332px; font-size: 14px;}
+.main-content button {display: flex; justify-content: center; height: 45px; line-height:31px; width: 180px;}
+.main-content select {font-size: 14px; height: 36px;}
+.main-content .nutbutton {display: flex; justify-content: center;}
+.main-content .nutbutton a {text-decoration: none; margin-right: 10px;}
+/* END CSS MAIN-CONTENT */
+
+/* START CSS CONTENT-MAIN */
+.content-main {font-size: 14px; margin: 2rem}
+.content-main h3 {color: #333; font-weight: bold;}
+.content-main h5 {height: 48px; color: #333; font-weight: bold;}
+.content-main .content {margin-top: 50px;}
+/* END CSS CONTENT-MAIN */
+
+
+/* CLASS JAVASCRIPT */
+.xuathienlistpost {opacity: 1 !important; visibility: visible !important; margin: 1rem !important; transition: .5s}
+.xuathienmuiten {transition: .3s; transform: rotate(90deg);}
+.xuathienuser {transition: 4s; margin-top: 2px !important; visibility: visible !important;opacity: 1 !important;}
+.iconmautrang {color: white !important}
+
+/* ====================END CSS ADMIN ACTOR================= */ 
+
+/* ====================START CSS ADMIN UPDATE================= */
+#sidebaradminupdate {background-color: black} 
+#sidebaradminupdate .icons1, #sidebaradminupdate .icons2 {color: #919191}
+#sidebaradminupdate .li-dashboard a:hover .icons1 {color: white;}
+#sidebaradminupdate .li-post .post:hover .icons2 {color: white}
+#sidebaradminupdate .list-post a {color: #222}
+#userupdate {background-color: #222;}
+#userupdate span, #userupdate a {color: white;}
+#userupdate .setting-user a:hover {background-color: black};

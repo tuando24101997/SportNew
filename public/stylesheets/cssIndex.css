@@ -1,0 +1,110 @@
+*{margin: 0px; padding: 0px;}
+body{ font-size: 14px; }
+
+/* css thanh navbar */
+.logoIndex {width: 115px; height: 37px; margin-top: 3px; margin-left: 6px}
+
+/* css menu */
+.menu{width: 900px;  height: 45px;background-color: #222; display: flex;justify-content:center;}
+.menu ul {margin-bottom: 0px;}
+.menu>ul>li {list-style-type: none; display: inline-table;}
+.menu ul li a {text-decoration: none; color: white; line-height: 45px; padding: 0px 10px 0px 10px; display: block; font-weight: bold;}
+.menu ul li a:hover{background-color: black; color: red; transition: all .6s}
+.sub-menu {	background-color: #222; margin-top: 30px;opacity: 0; }
+.sub-menu li { list-style-type: none; z-index: 999}
+.menu ul li:hover .sub-menu{opacity: 1; margin-top: 0px; transition: all .6s}
+
+/* css form in menu*/
+.formSearch {margin-top: 7px;}
+.formSearch input { width: 215px; height: 31px; padding-left: 3px;}
+.formSearch button { width: 31px; height: 31px; border: none; background-color: white }
+.formSearch button:hover {background-color: red; color: white}
+
+
+/* css nội dung content */
+.content { margin-top: 15px; margin-bottom: 40px;}
+/* css content left*/
+.content-left p {font-size: 20px; color: #ed1d24; font-weight: bold; border-top: 3px solid #ed1d24; padding-top: 5px;}
+.content-left table {border-color: #dee2e6; font-size: 16px; }
+.content-left table a {text-decoration: none; color: #333; text-align: justify;}
+.content-left table a:hover {color: #ed1d24}
+/* css content mid*/
+.content-mid .content-mid-big a{text-decoration: none; font-weight: bold; font-size: 20px; color: #222; line-height: 20px;}
+.content-mid .content-mid-big a:hover{color: #ed1d24}
+.content-mid .content-mid-big p{margin-top: 5px;}
+.content-mid-big { padding: 10px; }
+
+.content-mid .content-mid-small { padding: 5px }
+.content-mid .content-mid-small a {text-decoration: none; font-size: 14px; font-weight: bold; color: #333;}
+.content-mid .content-mid-small a:hover {color: red;}
+.content-mid .noidung {border: none;}
+
+/* css content news*/
+.content-news>p{ font-size: 20px; font-weight: bold; color: #ed1d24; border-top: solid 3px #ed1d24; padding-top: 7px;}
+.card-content-news-two {padding-left: 17px;}
+.card-content-news-two a{font-size: 16px; color: black; text-decoration: none; font-weight: bold}
+.card-content-news-two a:hover{color: #ed1d24}
+
+
+/* css new transfer*/
+.news-transfer .content-big {padding: 0.25rem}
+.news-transfer .content-big a{text-decoration: none; font-size: 20px; font-weight: bold; line-height: 20px; color: #333}
+.news-transfer .content-big a:hover {color: #ed1d24;}
+.news-transfer .content-big p{margin-top: 6px;}
+
+/* css lịch thi đấu */
+.lichthidau .card-lichthidau {border: none;}
+.lichthidau .card-lichthidau h4 {color: black; font-weight: bold;}
+
+/* css content right*/
+.content-right img { width: 100% }
+
+.ender {background-color: #222; color: white; border-top: solid 3px red; padding: 25px 0px;}
+.ender p{text-align: justify;}
+.ender .ender-left { padding-right: 25px; }
+.ender .ender-mid {padding-left: 30px;}
+.ender .ender-mid i {margin-right: 7px;}
+.ender .ender-right { padding-left: 30px; }
+.ender .ender-right .logo-app a{display: flex; justify-content: center; align-items: center; float: left; height: 60px; width: 60px; 
+text-decoration: none; border-radius: 6px; background-color: #555; color: #888; margin-right: 15px;}
+.ender .ender-right .logo-user:hover{color: white; background-color: #b299cc; transition: all .6s;}
+.ender .ender-right .logo-facebook:hover{color: white; background-color: #3578E5; transition: all .6s;}
+.ender .ender-right .logo-youtube:hover{color: #ff0000; background-color: white; transition: all .6s;}
+.ender .ender-right .logo-google:hover{color: white; background-color: #dc5246; transition: all .6s;}
+.ender .ender-right a i { font-size: 40px;}
+/* END CSS INDEX.HTML */
+
+/* START CSS XEMCHITIET.HTML */
+.content-mid .card-XemChiTiet h2{font-weight: bold; font-size: 30px;}
+.content-mid .card-XemChiTiet .title{font-size: 16px; font-weight: bold;}
+.content-mid .card-XemChiTiet .mid-content p{font-size: 14px;}
+.content-mid .card-XemChiTiet .author {display: flex; justify-content: end;}
+.content-mid .card-XemChiTiet .date {font-size: 15px; font-style: italic; color: #444; margin-top: 5px; font-weight: 600}
+.content-mid .comment {border-bottom: 2px solid #555;} 
+.content-mid .formComment input {font-size: 14px;}
+.content-mid .formComment button {font-size: 14px;}
+.content-mid .formComment .group-button-comment {display: flex; justify-content: end;}
+.content-suggest .noidung {border-style: none;}
+.content-suggest .noidung .content-mid-small {padding: 3px; font-size: 15px;}
+.content-suggest .noidung .content-mid-small a{text-decoration: none; color: #333}
+.content-suggest .noidung .content-mid-small a:hover{font-weight: bold}
+.listComment {font-size: 14px;}
+.listComment table {margin-top: 20px;}
+.listComment .content-comment {margin-left: 15px; margin-top: 5px;}
+.listComment .content-comment p{padding-bottom: 7px; font-size: 15px;}
+.listComment .image-user {position: absolute; top: 0;}
+.listComment .image-user img {width: 60px; height: 60px; border-radius: 30px;}
+.listComment .td-image {position: relative; height: 60px; width: 60px;}
+/* END CSS XEMCHITIET.HTML*/
+
+/* START CSS TIMKIEM.HTML */
+.group-button-phantrang {display: flex; justify-content: center;}
+/* END CSS XEMCHTIET.HTML*/
+
+/* START CSS BANGXEPHANG.HTML*/
+.contentBangXepHang p {font-size: 24px; text-align: center; font-weight: bold; margin-top: 15px;}
+.contentBangXepHang .bangXepHang table th { padding: 0px 7px; text-align: center; font-size: 16px;}
+.contentBangXepHang .bangXepHang table td {padding: 0px 7px; text-align: center;}
+.contentBangXepHang .bangXepHang {display: flex; justify-content:center; align-items: center; }
+
+/* END CSS BANGXEPHANG.HTML*/

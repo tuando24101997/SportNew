@@ -1,0 +1,26 @@
+/* START CSS LOGIN.HTML */
+
+.limiter .form-login {display: flex; justify-content:center; align-items: center; background-position: center; 
+background-repeat: no-repeat; background-size: cover; height: 100vh;}
+.limiter .form-login .logo {display: flex; justify-content: center;}
+.limiter .form-login .logo img {width: 150px; text-align: center;}
+.limiter .form-login h5 {text-align: center; font-size: 25px; font-weight: bold; margin-top: 20px; color: #444 }
+.limiter .form-login form label {margin-bottom: 0px; font-size: 13px; font-weight: 600; margin-top: 20px;}
+.limiter .form-login .quenMatKhau {text-align: right;}
+.limiter .form-login .quenMatKhau a {text-decoration: none; font-size: 13px; font-style: italic; color: #0366d6}
+.limiter .form-login .quenMatKhau a:hover{text-decoration: underline;}
+.limiter .form-login .loiDangNhap {font-size: 15px; font-style: italic; color: red; display: none;}
+.limiter .form-login .logo-app {display: flex; justify-content: center;}
+.limiter .form-login .logo-app a { display: flex; justify-content: center; align-items: center; height: 50px; width: 50px; 
+text-decoration: none; border-radius: 25px; background-color: white; margin-right: 15px;}
+.limiter .form-login .logo-app a i {font-size: 27px;}
+.limiter .form-login .logo-app .logo-facebook {color: #3578E5}
+.limiter .form-login .logo-app .logo-facebook:hover{color: white; background-color: #3578E5; transition: all .6s;}
+.limiter .form-login .logo-app .logo-google {color: #dc5246}
+.limiter .form-login .logo-app .logo-google:hover{color: white; background-color: #dc5246; transition: all .6s;}
+/* END CSS LOGIN.HTML*/
+
+/* START CSS REGISTER.HTML */
+.limiter input {height: 50px; font-size: 14px; border-radius: 25px; padding-left: 15px;}
+.limiter button {height: 50px; font-weight: 650; border-radius: 25px; font-size: 14px;}
+/* END CSS REGISTER.HTML */
