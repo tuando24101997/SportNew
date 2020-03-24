@@ -1,0 +1,203 @@
+<div class="container-fluid" style="background-color: #222">
+    <div class="row">
+        <div class="col-1"><a href="#"><img class="logo" src="images/logo.png"></a></div>
+        <div class="col-8">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">PREMIER LEUGUE</a></li>
+                    <li><a href="#">LA LIGA</a></li>
+                    <li><a href="#">BUNDESLIGA</a></li>
+                    <li><a href="#">LEAGUE 1</a></li>
+                    <li><a href="#">SERIA</a></li>	
+                    <li><a href="#">TRONG NƯỚC</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">ĐTQG VN</a></li>
+                            <li><a href="#">V-LEAGUE</a></li>
+                        </ul>
+                    </li>
+                    <li class="titleBig"><a href="#">BXH</a></li>
+                    <li class="titleBig"><a href="#">CHUYỂN NHƯỢNG</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">TRONG NƯỚC</a></li>
+                            <li><a href="#">QUỐC TẾ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <form class="formSearch">
+                <input type="text" name="search" id="inpSearch" placeholder="Search....">
+                <button type="submit"><i class="fas fa-search" style="font-size: 18px;"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <!-- Start row small-->
+                <div class="row mb-4">
+                    <div class="content-mid">
+                        <div class="card card-XemChiTiet" style="border-style: none;">
+                            {{#each this.loadPost}}
+                            <div>
+                                <h2 class="mt-3">{{postName}}</h2>
+                                <p class="date">{{postDate}}</p>
+                                <p class="title">{{postDes}}</p>
+                                <img src="images/news/{{postId}}/1.jpg" class="card-img-top mt-2 mb-3" alt="Ảnh tiêu đề">
+                                <div class="mid-content">
+                                    <p class="card-text">{{postContent}}</p>
+                                </div>
+                            </div>	
+                            {{/each}}
+                            <div class="author mt-3">
+                                <p><b><i>Tác giả: </i></b>Phạm Anh Khang</p>
+                            </div>
+                            <div class="comment mt-2 mb-3">
+                                <h4>Bình luận</h4>
+                            </div>
+                            <div class="formComment">
+                                <form>
+                                    <input type="text" class="form-control shadow-sm mb-2" placeholder="Viết bình luận... ">
+                                    <div class="group-button-comment">
+                                        <button type="reset" class="btn btn-secondary mr-2">Hủy</button>
+                                        <button type="submit" class="btn btn-primary">Gửi</button>	
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="listComment">
+                                <table>
+                                    <tr>
+                                        <td class="td-image">
+                                            <div class="image-user">
+                                                <img src="images/news/3/1.jpg">
+                                            </div>	
+                                        </td>
+                                        <td>
+                                            <div class="content-comment">
+                                                <b>An Vo</b>
+                                                <p>Liverpool mùa này có khả năng vô địch mà bất bại quá. Ngoại hạng Anh bây giờ thì Liverpool là quá bá luôn rồi.</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="td-image">
+                                            <div class="image-user">
+                                                <img src="images/news/2/1.jpg">
+                                            </div>	
+                                        </td>
+                                        <td>
+                                            <div class="content-comment">
+                                                <b>Nguyễn Văn Quân</b>
+                                                <p>Liverpool mùa này có khả năng vô địch mà bất bại quá.</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="td-image">
+                                            <div class="image-user">
+                                                <img src="images/news/3/1.jpg">
+                                            </div>	
+                                        </td>
+                                        <td>
+                                            <div class="content-comment">
+                                                <b>An Vo</b>
+                                                <p>San bằng kỷ lục vô địch của MU</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>	
+                            </div>
+                        </div>
+                    </div>	
+                </div> <!-- end row small-->
+
+                <!-- image quảng cáo -->
+                <div><img src="images/quangcao3.png" style="width: 100%"></div>
+
+                <div class="content-news mt-4">
+                    <p>TIN TỨC LIÊN QUAN</p>
+                </div>
+                <div class="row content-suggest">
+                    <div class="col-3 mb-2">
+                        <div class="card noidung">
+                            <a href="#"><img src="images/news/7/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
+                            <div class="card-body content-mid-small">
+                            <a href="#">Có Haaland, Dortmund bất ngờ trở mặt với "ông vua vòng cấm"</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="card noidung">
+                            <a href="#"><img src="images/news/11/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
+                            <div class="card-body content-mid-small">
+                            <a href="#">HLV Park Hang Seo đau đầu vì chấn thương của học trò cưng</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="card noidung">
+                            <a href="#"><img src="images/news/9/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
+                            <div class="card-body content-mid-small">
+                            <a href="#">Van Persie quay trở lại Manchester United với một vai trò mới</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-2">
+                        <div class="card noidung">
+                            <a href="#"><img src="images/news/10/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
+                            <div class="card-body content-mid-small">
+                            <a href="#">U23 Việt Nam khó làm nên chuyện tại VCK U23 Châu Á</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end col-9 big -->
+            <div class="col-4 content-right">
+                <a href="#"><img src="images/quangcao1.png"></a>
+                <div class="quangcao">
+                    <a href="#"><img src="images/quangcao2.png"></a>
+                    <a href="#"><img src="images/quangcao4.png"></a>
+                </div>		
+            </div>			
+        </div>
+    </div>
+</div>
+
+<div class="ender">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 ender-left">
+                <h5 class="mb-4">THÔNG TIN TRANG WEB:</h5>
+                <p>Đây là trang web cá nhân thực hiện nhằm mục đích luyện tập các nội dung cơ bản về lập trình ứng dụng web <b>không mang mục đích thương mại</b>.</p>
+                <p>Các thông tin dữ liệu trang web sử dụng đều được tham khảo từ trang web <b>bongda.com.vn</b> và cả phần giao diện đa phần cũng được tham khảo từ chính trang web <b>bongda.com.vn.</b></p>
+            </div>
+            <div class="col-4 ender-mid" style="border-left: solid 1px #dee2e6">
+                <h5 class="mb-4">LIÊN HỆ:</h5>
+                <p><i class="fas fa-map-marker-alt"></i> <b>Địa chỉ: </b>71 Xuân Hồng, quận Tân Bình, Tp.HCM</p>
+                <p><i class="fas fa-phone-alt"></i> <b>Điện thoại: </b>(81) 378 670 813</p>
+                <p><i class="fas fa-info"></i> <b>Quảng cáo: </b>tuandobolero@gmail.com</p>
+                <p><i class="far fa-envelope"></i> <b>Email: </b>tuando24101997@gmail.com</p>
+                <p><i class="far fa-paper-plane"></i> <b>Tòa soạn & Hỗ trợ: </b>(08) 3910-5018</p>
+            </div>
+            <div class="col-4 ender-right" style="border-left: solid 1px #dee2e6">
+                <h5 class="mb-4">TẢI APP TRÊN ĐIỆN THOẠI:</h5>
+                <div class="logo-app">
+                    <a href="#" class="logo-user"><i class="fas fa-user"></i></a>
+                    <a href="https://www.facebook.com/TuanNhaGao" class="logo-facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UCwrZ8VG4e_ZJ512CZsRa-QQ" class="logo-youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="logo-google"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
