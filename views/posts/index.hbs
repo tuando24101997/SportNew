@@ -1,11 +1,11 @@
 <div class="container-fluid" style="background-color: #222">
     <div class="row">
-        <div class="col-1"><a href="#"><img class="logoIndex" src="/images/background/logo.png"></a></div>
+        <div class="col-1"><a href="/"><img class="logoIndex" src="/images/background/logo.png"></a></div>
         <div class="col-8">
             <div class="menu">
                 <ul>
                     {{#each this.loadCat}}
-                        <li><a href="/find/categories/{{catId}}" style="text-transform: uppercase;">{{catName}}</a></li>
+                        <li><a href="/find/{{catId}}/categories" style="text-transform: uppercase;">{{catName}}</a></li>
                     {{/each}}
                 </ul>
             </div>
@@ -42,7 +42,7 @@
                     <div class="col-8 content-mid">
                         {{#each this.loadNewFirst}}
                         <div class="card">
-                            <a href="XemChiTiet.html"><img src="/images/news/{{postId}}/1.jpg" class="card-img-top" alt="Ảnh tiêu đề"></a>
+                            <a href="post/{{}}/categories"><img src="/images/news/{{postId}}/1.jpg" class="card-img-top" alt="Ảnh tiêu đề"></a>
                             <div class="card-body content-mid-big">
                             <a href="XemChiTiet.html">{{postName}}</a>
                             <p class="card-text">{{postDes}}</p>

@@ -1,27 +1,12 @@
 <div class="container-fluid" style="background-color: #222">
     <div class="row">
-        <div class="col-1"><a href="#"><img class="logo" src="images/logo.png"></a></div>
+        <div class="col-1"><a href="/"><img class="logoIndex" src="/images/background/logo.png"></a></div>
         <div class="col-8">
             <div class="menu">
                 <ul>
-                    <li><a href="#">PREMIER LEUGUE</a></li>
-                    <li><a href="#">LA LIGA</a></li>
-                    <li><a href="#">BUNDESLIGA</a></li>
-                    <li><a href="#">LEAGUE 1</a></li>
-                    <li><a href="#">SERIA</a></li>	
-                    <li><a href="#">TRONG NƯỚC</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">ĐTQG VN</a></li>
-                            <li><a href="#">V-LEAGUE</a></li>
-                        </ul>
-                    </li>
-                    <li class="titleBig"><a href="#">BXH</a></li>
-                    <li class="titleBig"><a href="#">CHUYỂN NHƯỢNG</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">TRONG NƯỚC</a></li>
-                            <li><a href="#">QUỐC TẾ</a></li>
-                        </ul>
-                    </li>
+                    {{#each this.loadCat}}
+                        <li><a href="/find/categories/{{catId}}" style="text-transform: uppercase;">{{catName}}</a></li>
+                    {{/each}}
                 </ul>
             </div>
         </div>
@@ -33,7 +18,6 @@
         </div>
     </div>
 </div>
-
 
 
 <div class="content">
@@ -128,38 +112,16 @@
                     <p>TIN TỨC LIÊN QUAN</p>
                 </div>
                 <div class="row content-suggest">
+                    {{#each this.loadSuggetPost}}
                     <div class="col-3 mb-2">
                         <div class="card noidung">
-                            <a href="#"><img src="images/news/7/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
+                            <a href="#"><img src="images/news/{{postId}}/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
                             <div class="card-body content-mid-small">
-                            <a href="#">Có Haaland, Dortmund bất ngờ trở mặt với "ông vua vòng cấm"</a>
+                            <a href="#">{{postName}}</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 mb-2">
-                        <div class="card noidung">
-                            <a href="#"><img src="images/news/11/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
-                            <div class="card-body content-mid-small">
-                            <a href="#">HLV Park Hang Seo đau đầu vì chấn thương của học trò cưng</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 mb-2">
-                        <div class="card noidung">
-                            <a href="#"><img src="images/news/9/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
-                            <div class="card-body content-mid-small">
-                            <a href="#">Van Persie quay trở lại Manchester United với một vai trò mới</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 mb-2">
-                        <div class="card noidung">
-                            <a href="#"><img src="images/news/10/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
-                            <div class="card-body content-mid-small">
-                            <a href="#">U23 Việt Nam khó làm nên chuyện tại VCK U23 Châu Á</a>
-                            </div>
-                        </div>
-                    </div>
+                    {{/each}}
                 </div>
             </div><!-- end col-9 big -->
             <div class="col-4 content-right">
@@ -192,7 +154,7 @@
             <div class="col-4 ender-right" style="border-left: solid 1px #dee2e6">
                 <h5 class="mb-4">TẢI APP TRÊN ĐIỆN THOẠI:</h5>
                 <div class="logo-app">
-                    <a href="#" class="logo-user"><i class="fas fa-user"></i></a>
+                    <a href="/account/login" class="logo-user"><i class="fas fa-user"></i></a>
                     <a href="https://www.facebook.com/TuanNhaGao" class="logo-facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.youtube.com/channel/UCwrZ8VG4e_ZJ512CZsRa-QQ" class="logo-youtube"><i class="fab fa-youtube"></i></a>
                     <a href="#" class="logo-google"><i class="fab fa-google-plus-g"></i></a>
