@@ -1,25 +1,3 @@
-<div class="container-fluid" style="background-color: #222">
-    <div class="row">
-        <div class="col-1"><a href="/"><img class="logoIndex" src="/images/background/logo.png"></a></div>
-        <div class="col-8">
-            <div class="menu">
-                <ul>
-                    {{#each this.loadCat}}
-                        <li><a href="/find/categories/{{catId}}" style="text-transform: uppercase;">{{catName}}</a></li>
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-        <div class="col-3">
-            <form class="formSearch">
-                <input type="text" name="search" id="inpSearch" placeholder="Search....">
-                <button type="submit"><i class="fas fa-search" style="font-size: 18px;"></i></button>
-            </form>
-        </div>
-    </div>
-</div>
-
-
 <div class="content">
     <div class="container">
         <div class="row">
@@ -33,7 +11,7 @@
                                 <h2 class="mt-3">{{postName}}</h2>
                                 <p class="date">{{postDate}}</p>
                                 <p class="title">{{postDes}}</p>
-                                <img src="images/news/{{postId}}/1.jpg" class="card-img-top mt-2 mb-3" alt="Ảnh tiêu đề">
+                                <img src="/images/news/{{postId}}/1.jpg" class="card-img-top mt-2 mb-3" alt="Ảnh tiêu đề">
                                 <div class="mid-content">
                                     <p class="card-text">{{postContent}}</p>
                                 </div>
@@ -59,7 +37,7 @@
                                     <tr>
                                         <td class="td-image">
                                             <div class="image-user">
-                                                <img src="images/news/3/1.jpg">
+                                                <img src="/images/news/3/1.jpg">
                                             </div>	
                                         </td>
                                         <td>
@@ -74,7 +52,7 @@
                                     <tr>
                                         <td class="td-image">
                                             <div class="image-user">
-                                                <img src="images/news/2/1.jpg">
+                                                <img src="/images/news/2/1.jpg">
                                             </div>	
                                         </td>
                                         <td>
@@ -89,7 +67,7 @@
                                     <tr>
                                         <td class="td-image">
                                             <div class="image-user">
-                                                <img src="images/news/3/1.jpg">
+                                                <img src="/images/news/3/1.jpg">
                                             </div>	
                                         </td>
                                         <td>
@@ -106,7 +84,7 @@
                 </div> <!-- end row small-->
 
                 <!-- image quảng cáo -->
-                <div><img src="images/quangcao3.png" style="width: 100%"></div>
+                <div><img src="/images/background/quangcao3.png" style="width: 100%"></div>
 
                 <div class="content-news mt-4">
                     <p>TIN TỨC LIÊN QUAN</p>
@@ -115,9 +93,9 @@
                     {{#each this.loadSuggetPost}}
                     <div class="col-3 mb-2">
                         <div class="card noidung">
-                            <a href="#"><img src="images/news/{{postId}}/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
+                            <a href="/post/{{postId}}/categories"><img src="/images/news/{{postId}}/1.jpg" class="card-img-top img-content" alt="Ảnh tiêu đề"></a>
                             <div class="card-body content-mid-small">
-                            <a href="#">{{postName}}</a>
+                            <a href="/post/{{postId}}/categories">{{postName}}</a>
                             </div>
                         </div>
                     </div>
@@ -125,41 +103,12 @@
                 </div>
             </div><!-- end col-9 big -->
             <div class="col-4 content-right">
-                <a href="#"><img src="images/quangcao1.png"></a>
+                <a href="#"><img src="/images/background/quangcao0.png"></a>
                 <div class="quangcao">
-                    <a href="#"><img src="images/quangcao2.png"></a>
-                    <a href="#"><img src="images/quangcao4.png"></a>
+                    <a href="#"><img src="/images/background/quangcao2.png"></a>
+                    <a href="#"><img src="/images/background/quangcao0.png"></a>
                 </div>		
             </div>			
-        </div>
-    </div>
-</div>
-
-<div class="ender">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 ender-left">
-                <h5 class="mb-4">THÔNG TIN TRANG WEB:</h5>
-                <p>Đây là trang web cá nhân thực hiện nhằm mục đích luyện tập các nội dung cơ bản về lập trình ứng dụng web <b>không mang mục đích thương mại</b>.</p>
-                <p>Các thông tin dữ liệu trang web sử dụng đều được tham khảo từ trang web <b>bongda.com.vn</b> và cả phần giao diện đa phần cũng được tham khảo từ chính trang web <b>bongda.com.vn.</b></p>
-            </div>
-            <div class="col-4 ender-mid" style="border-left: solid 1px #dee2e6">
-                <h5 class="mb-4">LIÊN HỆ:</h5>
-                <p><i class="fas fa-map-marker-alt"></i> <b>Địa chỉ: </b>71 Xuân Hồng, quận Tân Bình, Tp.HCM</p>
-                <p><i class="fas fa-phone-alt"></i> <b>Điện thoại: </b>(81) 378 670 813</p>
-                <p><i class="fas fa-info"></i> <b>Quảng cáo: </b>tuandobolero@gmail.com</p>
-                <p><i class="far fa-envelope"></i> <b>Email: </b>tuando24101997@gmail.com</p>
-                <p><i class="far fa-paper-plane"></i> <b>Tòa soạn & Hỗ trợ: </b>(08) 3910-5018</p>
-            </div>
-            <div class="col-4 ender-right" style="border-left: solid 1px #dee2e6">
-                <h5 class="mb-4">TẢI APP TRÊN ĐIỆN THOẠI:</h5>
-                <div class="logo-app">
-                    <a href="/account/login" class="logo-user"><i class="fas fa-user"></i></a>
-                    <a href="https://www.facebook.com/TuanNhaGao" class="logo-facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com/channel/UCwrZ8VG4e_ZJ512CZsRa-QQ" class="logo-youtube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="logo-google"><i class="fab fa-google-plus-g"></i></a>
-                </div>
-            </div>
         </div>
     </div>
 </div>

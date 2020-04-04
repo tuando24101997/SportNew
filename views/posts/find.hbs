@@ -1,56 +1,19 @@
-<div class="container-fluid" style="background-color: #222">
-    <div class="row">
-        <div class="col-1"><a href="#"><img class="logo" src="images/logo.png"></a></div>
-        <div class="col-8">
-            <div class="menu">
-                <ul>
-                    <li><a href="#">PREMIER LEUGUE</a></li>
-                    <li><a href="#">LA LIGA</a></li>
-                    <li><a href="#">BUNDESLIGA</a></li>
-                    <li><a href="#">LEAGUE 1</a></li>
-                    <li><a href="#">SERIA</a></li>	
-                    <li><a href="#">TRONG NƯỚC</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">ĐTQG VN</a></li>
-                            <li><a href="#">V-LEAGUE</a></li>
-                        </ul>
-                    </li>
-                    <li class="titleBig"><a href="#">BXH</a></li>
-                    <li class="titleBig"><a href="#">CHUYỂN NHƯỢNG</a>
-                        <ul class="sub-menu">
-                            <li><a href="#">TRONG NƯỚC</a></li>
-                            <li><a href="#">QUỐC TẾ</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-3">
-            <form class="formSearch">
-                <input type="text" name="search" id="inpSearch" placeholder="Search....">
-                <button type="submit"><i class="fas fa-search" style="font-size: 18px;"></i></button>
-            </form>
-        </div>
-    </div>
-</div>
-
-
 
 <div class="content">
     <div class="container">
         <div class="row">
             <div class="col-9">
-                <h3>Danh sách tìm kiếm</h3>
+                <h2>Danh sách tìm kiếm</h2>
                 <div class="group-card-Search mt-4">
                     {{#each this.loadPost}}
                     <div class="card mb-3" style="border: none;">
                         <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img src="images/news/{{postId}}/1.jpg" class="card-img" alt="...">
+                            <img src="/images/news/{{postId}}/1.jpg" class="card-img" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-content-news-two">
-                            <a href="#" style="font-size: 25px;">{{postName}}</a>
+                            <a href="/post/{{postId}}/categories" style="font-size: 25px;">{{postName}}</a>
                             <p>{{postDes}}</p>
                             </div>
                         </div>
@@ -58,50 +21,35 @@
                     </div>
                     {{/each}}
                 </div>
-                <div class="phantrang mt-4">
-                    <div class="group-button-phantrang">
-                        <button type="button" class="btn btn-dark mr-1">1</button>
-                        <button type="button" class="btn btn-outline-dark mr-1">2</button>
-                        <button type="button" class="btn btn-outline-dark">3</button>
+                <div class="row">
+                    <div class="col-sm-12" style="display: flex; justify-content: center;">
+                        <nav>
+                            <ul class="pagination">
+                            {{#if this.temPage}}
+                                {{#each this.page_number}}
+                                    {{#if isCurrent}}
+                                        <li class="page-item active">
+                                            <a class="page-link" href="?page={{value}}">{{value}}</a>
+                                        </li>
+                                    {{else}}
+                                        <li class="page-item">
+                                            <a class="page-link" href="?page={{value}}">{{value}}</a>
+                                        </li>
+                                    {{/if}}
+                                {{/each}}
+                            {{else}}
+                            {{/if}}
+                            
+                            </ul>
+                        </nav>
                     </div>
-                </div>
-            </div><!-- end col-9 big -->
+                </div>    
+            </div>
             <div class="col-3 content-right">
-                <a href="#"><img src="images/quangcao1.png"></a>
-                <div class="quangcao">
-                    <a href="#"><img src="images/quangcao2.png"></a>
-                    <a href="#"><img src="images/quangcao4.png"></a>
-                </div>		
+                <a href="#"><img src="/images/background/quangcao0.png"></a>
+                <a href="#"><img src="/images/background/quangcao1.png"></a>
             </div>			
         </div>
     </div>
 </div>
-
-<div class="ender">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 ender-left">
-                <h5 class="mb-4">THÔNG TIN TRANG WEB:</h5>
-                <p>Đây là trang web cá nhân thực hiện nhằm mục đích luyện tập các nội dung cơ bản về lập trình ứng dụng web <b>không mang mục đích thương mại</b>.</p>
-                <p>Các thông tin dữ liệu trang web sử dụng đều được tham khảo từ trang web <b>bongda.com.vn</b> và cả phần giao diện đa phần cũng được tham khảo từ chính trang web <b>bongda.com.vn.</b></p>
-            </div>
-            <div class="col-4 ender-mid" style="border-left: solid 1px #dee2e6">
-                <h5 class="mb-4">LIÊN HỆ:</h5>
-                <p><i class="fas fa-map-marker-alt"></i> <b>Địa chỉ: </b>71 Xuân Hồng, quận Tân Bình, Tp.HCM</p>
-                <p><i class="fas fa-phone-alt"></i> <b>Điện thoại: </b>(81) 378 670 813</p>
-                <p><i class="fas fa-info"></i> <b>Quảng cáo: </b>tuandobolero@gmail.com</p>
-                <p><i class="far fa-envelope"></i> <b>Email: </b>tuando24101997@gmail.com</p>
-                <p><i class="far fa-paper-plane"></i> <b>Tòa soạn & Hỗ trợ: </b>(08) 3910-5018</p>
-            </div>
-            <div class="col-4 ender-right" style="border-left: solid 1px #dee2e6">
-                <h5 class="mb-4">TẢI APP TRÊN ĐIỆN THOẠI:</h5>
-                <div class="logo-app">
-                    <a href="#" class="logo-user"><i class="fas fa-user"></i></a>
-                    <a href="https://www.facebook.com/TuanNhaGao" class="logo-facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.youtube.com/channel/UCwrZ8VG4e_ZJ512CZsRa-QQ" class="logo-youtube"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="logo-google"><i class="fab fa-google-plus-g"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+ 

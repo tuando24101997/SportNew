@@ -1,37 +1,51 @@
-<div class="limiter">
-    <div class="form-login" style="background-image: url('/images/background/background.png'); height: 654px;">
-        <div class="card-form shadow-sm">
-            <div class="card" style="width: 23rem;">
-                <div class="card-body">
-                <div class="logo"><img src="/images/background/logo.png"></div>
-                <h5>Login</h5>
-                <form>
-                    <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href="/stylesheets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' href="/stylesheets/vendor/fontawesome/css/all.css">
+    <link rel='stylesheet' href="/stylesheets/cssIndex.css">
+    <link rel='stylesheet' href="/stylesheets/cssLogin.css">
+  </head>
+  <body>
+    <div class="limiter">
+        <div class="form-login" style="background-image: url('/images/background/background.png'); height: 654px;">
+            <div class="card-form shadow-sm">
+                <div class="card" style="width: 23rem;">
+                    <div class="card-body">
+                    <div class="logo"><img src="/images/background/logo.png"></div>
+                    <h5>Login</h5>
+                    <form>
+                        <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-block btn-primary mt-5">Login</button>
+                    </form>
+                    <div class="quenMatKhau mt-1">
+                        <a href="#">Quên mật khẩu?</a>
                     </div>
-                    <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password">
+                    <div class="quenMatKhau">
+                        <a href="/account/register">Register</a>
                     </div>
-                    <button type="submit" class="btn btn-block btn-primary mt-5">Login</button>
-                </form>
-                <div class="quenMatKhau mt-1">
-                    <a href="#">Quên mật khẩu?</a>
-                </div>
-                <div class="quenMatKhau">
-                    <a href="/account/register">Register</a>
-                </div>
-                <div class="loiDangNhap">
-                    <p>Sai tên đăng nhập hoặc mật khẩu</p>
-                </div>
-                <hr>
-                <div class="logo-app">
-                    <a href="#" class="logo-facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="logo-google"><i class="fab fa-google-plus-g"></i></a>
-                </div>
+                    <div class="loiDangNhap">
+                        <p>Sai tên đăng nhập hoặc mật khẩu</p>
+                    </div>
+                    <hr>
+                    <div class="logo-app">
+                        <a href="#" class="logo-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="logo-google"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <script type="text/javascript" src="/stylesheets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
